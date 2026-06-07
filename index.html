@@ -10,17 +10,30 @@
   <body>
     <header class="hero">
       <div class="container">
-        <h1>Nagur Diwakar</h1>
-        <p class="role">Senior DevOps Engineer</p>
-        <p class="summary">I focus on reliability, automation and reducing manual toil. Experienced in Linux, CI/CD (Jenkins, GitHub Actions), Kubernetes, Docker, Terraform (IaC), AWS and Python.</p>
-        <p class="contact">
-          <a href="https://github.com/NagurDiwakar" target="_blank" rel="noopener">GitHub</a>
-        </p>
+        <div class="top-row">
+          <div>
+            <h1>Nagur Diwakar</h1>
+            <p class="role">Senior DevOps Engineer</p>
+            <p class="summary">I focus on reliability, automation and reducing manual toil. Experienced in Linux, CI/CD (Jenkins, GitHub Actions), Kubernetes, Docker, Terraform (IaC), AWS and Python.</p>
+            <p class="contact">
+              <a href="https://github.com/NagurDiwakar" target="_blank" rel="noopener">GitHub</a>
+            </p>
+          </div>
+
+          <div class="header-actions">
+            <nav class="quick-nav" aria-label="Quick links">
+              <a href="#Professional Snapshot">Snapshot</a>
+              <a href="#Core Skills &amp; Technologies">Skills</a>
+              <a href="#Contact">Contact</a>
+            </nav>
+            <button id="themeToggle" class="btn">Toggle theme</button>
+          </div>
+        </div>
       </div>
     </header>
 
     <main class="container">
-      <section class="card">
+      <section class="card" id="Professional Snapshot">
         <h2>Professional Snapshot</h2>
         <ul>
           <li>Working as Senior DevOps Engineer — delivering reliable platforms and automation.</li>
@@ -30,7 +43,7 @@
         </ul>
       </section>
 
-      <section class="card">
+      <section class="card" id="Core Skills & Technologies">
         <h2>Core Skills & Technologies</h2>
         <div class="skills-grid">
           <div>
@@ -87,7 +100,7 @@
         </ul>
       </section>
 
-      <section class="card footer-card">
+      <section class="card footer-card" id="Contact">
         <h2>Contact</h2>
         <p>Find my work and reach out via GitHub: <a href="https://github.com/NagurDiwakar" target="_blank" rel="noopener">github.com/NagurDiwakar</a></p>
       </section>
@@ -100,5 +113,6 @@
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+    <script src="main.js"></script>
   </body>
 </html>
